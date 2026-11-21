@@ -224,6 +224,13 @@ a.card:hover{transform:translateX(3px);border-color:var(--gold);}
 a.card .t{font-weight:900;font-size:15.5px;color:var(--ink);line-height:1.5;}
 a.card .d{font-size:13px;color:var(--dim);line-height:1.65;margin-top:4px;}
 .empty{display:none;font-size:14px;color:var(--dim);padding:10px 2px;}
+
+/* Header navigation */
+.site-nav{position:sticky;top:0;z-index:35;background:rgba(251,248,242,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--gold-dim);margin:0 auto 20px;padding:10px 14px;border-radius:0 0 18px 18px;display:flex;justify-content:center;gap:8px;flex-wrap:wrap}
+.site-nav a{color:var(--ink);font-weight:800;font-size:13px;padding:7px 13px;border-radius:999px;border:1px solid transparent}
+.site-nav a:hover{border-color:var(--gold-dim);background:var(--card)}
+@media(max-width:600px){.site-nav{gap:3px;padding:8px 5px}.site-nav a{font-size:12px;padding:6px 9px}}
+
 </style>
 </head>
 <body>
@@ -242,6 +249,7 @@ a.card .d{font-size:13px;color:var(--dim);line-height:1.65;margin-top:4px;}
 </div>
 
 <div class="wrap">
+  <nav class="site-nav" aria-label="網站導覽"><a href="index.html">首頁</a><a href="#all">資源總覽</a><a href="family-budget.html">家庭收支表</a><a href="#institute">關於我</a></nav>
 
   <!-- ═════ 開頭：這頁是什麼 ═════ -->
   <header class="hero">
@@ -274,6 +282,7 @@ a.card .d{font-size:13px;color:var(--dim);line-height:1.65;margin-top:4px;}
     <h2>我整理的資源</h2>
     <div class="cards">
       <!-- 卡片開始 -->
+      <a class="card" href="family-budget.html"><div class="t">家庭收支管理表</div><div class="d">整理每月收入、生活支出與預留款，快速看懂家庭現金流。</div></a>
       <a class="card" href="home-equity-calculator.html"><div class="t">房屋資產運用試算工具</div><div class="d">輸入房屋市值與剩餘房貸，試算資產運用情境與假設收益。</div></a>
       
       <!-- 卡片結束 -->
